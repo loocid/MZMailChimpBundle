@@ -94,6 +94,16 @@ class MCList extends HttpClient
         $this->sendWelcome = $sendWelcome;
     }
 
+	/**
+	 * Set mailchimp send goodbye
+	 * 
+	 * @param boolean $sendGoodbye boolean to send goodbye email
+	 */ 
+	public function setSendGoodbye($sendGoodbye)
+	{
+		$this->sendGoodbye = $sendGoodbye;
+	}
+
    /**
     * Set mailchimp merge_vars
     * 
